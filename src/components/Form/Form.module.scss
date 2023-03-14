@@ -1,0 +1,18 @@
+@use '../../styles/' as *;
+
+.form {
+  font-size: rem(20);
+  color: col(form-text);
+  &__textarea {
+    resize: vertical;
+    margin-bottom: rem(5);
+  }
+  &__fieldset {
+    @include flex(false, stretch, column);
+    border: none;
+  }
+  &__legend {
+    font-size: rem(30);
+    margin-bottom: rem(15);
+  }
+}

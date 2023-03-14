@@ -1,0 +1,39 @@
+@use '../../styles/' as *;
+
+.card {
+  @include flex(false, false, column);
+  border-radius: rem(5);
+  background-color: col(card-bg);
+  color: col(card-text);
+  overflow: hidden;
+  &__image_container {
+    height: rem(300);
+    margin-bottom: rem(15);
+  }
+  &__image {
+    display: block;
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__options {
+    flex: 1 1 auto;
+    @include flex(false, flex-start, column);
+    padding: 0 rem(10) rem(10);
+    text-align: center;
+  }
+  &__name {
+    letter-spacing: rem(2);
+    word-break: break-word;
+    font-weight: 600;
+    font-size: rem(30);
+    line-height: rem(25);
+    margin: 0 0 rem(25) rem(10);
+  }
+  &__button-container {
+    display: flex;
+  }
+  &__button {
+    margin-right: rem(5);
+  }
+}

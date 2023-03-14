@@ -1,0 +1,33 @@
+@use '../../../styles/' as *;
+
+.option {
+  @include flex(false, false, column);
+  margin-bottom: rem(5);
+  &_checkbox {
+    @include flex(flex-start, center, row);
+    margin-bottom: rem(15);
+  }
+}
+
+.label {
+  font-size: rem(20);
+  margin-bottom: rem(5);
+  &_checkbox {
+    margin-right: rem(10);
+  }
+}
+
+.input {
+  color: inherit;
+  background-color: col(form-bg);
+  padding: rem(5);
+  border: none;
+  border-radius: rem(5);
+  font-size: inherit;
+}
+
+.textarea {
+  resize: vertical;
+  margin-bottom: rem(5);
+  max-height: rem(300);
+}

@@ -1,0 +1,51 @@
+@use '../../styles/' as *;
+
+.header {
+  background-color: col(nav-bg);
+  &__container {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  &__nav {
+    @include flex(false, center);
+    padding: rem(10) 0;
+  }
+  &__logo {
+    margin-right: rem(25);
+    &:hover {
+      .header__logo-icon {
+        fill: col(button-hover);
+      }
+    }
+    &-icon {
+      transition: fill 0.2s ease-in-out;
+      fill: col(button);
+    }
+  }
+  &__list {
+    @include flex();
+    list-style: none;
+  }
+  &__item {
+    margin-right: rem(20);
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__item-button {
+    padding: rem(10);
+    border-radius: rem(8);
+    border: none;
+    font-size: rem(20);
+    background-color: transparent;
+    color: col(header-text);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: col(button-background-hover);
+      color: col(header-text-hover);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../../styles/" as *;
+
+.footer {
+  @include flex(center);
+  color: col(header-text);
+  background-color: col(nav-bg);
+  padding: rem(19);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+}

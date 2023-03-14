@@ -1,0 +1,39 @@
+@use '../../../styles/' as *;
+
+.button {
+  padding: rem(10);
+  font-size: rem(20);
+  background-color: transparent;
+  color: #6aabe0;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border-radius: rem(5);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.bordered {
+  border: 1px solid #7cb5e4;
+  background-color: transparent;
+  &:hover {
+    background-color: #4a93cf2a;
+    border-color: #6aabe0;
+  }
+}
+
+.contained {
+  background-color: #90caf9;
+  color: #0b1924;
+  &:hover {
+    background-color: #6aabe0;
+  }
+}
+
+.text {
+  color: col(header-text);
+  &:hover {
+    background-color: col(button-background-hover);
+    color: col(header-text-hover);
+  }
+}
